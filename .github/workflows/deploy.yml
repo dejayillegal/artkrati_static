@@ -25,6 +25,7 @@ jobs:
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
         with:
           path: ${{ github.workspace }}/public
+          path: ./public
   deploy:
     environment:
       name: github-pages

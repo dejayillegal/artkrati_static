@@ -1,0 +1,72 @@
+:root {
+  --primary: #e27d87; /* from logo bg */
+  --secondary: #d9e0e2; /* from visiting card light bg */
+  --text: #222222;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: var(--text);
+  background: var(--secondary);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--primary);
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.about, .services {
+  padding: 2rem;
+  background: white;
+  margin: 1rem auto;
+  max-width: 900px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.service {
+  background: var(--secondary);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+}
